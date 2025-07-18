@@ -21,7 +21,7 @@ if ($_POST) {
   } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $error = 'Invalid email format.';
   } elseif (strlen($password) < 6) {
-    $error = 'Password mus be at least 6 characters long.';
+    $error = 'Password must be at least 6 characters long.';
   } else {
     $conn = getConnection();
 
